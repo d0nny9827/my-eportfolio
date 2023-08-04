@@ -44,7 +44,7 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border-color: #1e71b8;
+  border-color: #4d4dff;
 }
 
 label {
@@ -115,7 +115,7 @@ GLOBAL / RESUSABLE CLASSES & ID'S
 */
 
 .blue {
-  color: #1e71b8 !important;
+  color: #4d4dff !important;
 }
 
 .click {
@@ -314,10 +314,10 @@ MODAL
 }
 
 .form__submit {
-  background-color: #1e71b8;
+  background-color: #4d4dff;;
   color: white;
   font-size: 20px;
-  border: 2px solid #1e71b8;
+  border: 2px solid #4d4dff;;
   font-weight: bold;
   width: 100%;
   max-width: 240px;
@@ -332,8 +332,8 @@ MODAL
 }
 
 .form__submit:active {
-  color: #1e71b8;
-  border-color: #1e71b8;
+  color: #4d4dff;;
+  border-color: #4d4dff;;
 }
 
 .modal__overlay {
@@ -353,7 +353,7 @@ MODAL
 }
 
 .modal__overlay--success {
-  background-color: #1e71b8;
+  background-color: #4d4dff;;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -459,7 +459,7 @@ LANDING PAGE
 }
 
 .social__link {
-  background-color: #1e71b8;
+  background-color: #4d4dff;;
   color: white;
   padding: 6px;
   font-size: 14px;
