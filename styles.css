@@ -63,6 +63,7 @@ p {
 
 section {
   background-color: rgb(245, 245, 245);
+  transition: all 500ms ease;
 }
 
 textarea {
@@ -70,6 +71,41 @@ textarea {
   min-height: 100px;
   max-height: 240px;
   margin-top: 8px;
+}
+
+/*
+
+DARK THEME 
+
+*/
+
+.dark-theme section {
+  background-color: #242424;
+}
+
+.dark-theme .section__title,
+.dark-theme .nav__link--anchor,
+.dark-theme .header__para,
+.dark-theme .title {
+  color: white;
+}
+
+.dark-theme .nav__img {
+  filter: grayscale(1) invert(1);
+}
+
+.dark-theme .scroll__icon {
+  border-color: white;
+}
+
+.dark-theme .link__hover-effect--black:after,
+.dark-theme .scroll__icon:after {
+  background-color: white;
+}
+
+.dark-theme .mail__btn {
+  background-color: white;
+  color: black;
 }
 
 /*
@@ -165,6 +201,7 @@ nav,
   visibility: hidden;
   transition: all 400ms ease;
 }
+
 /*
 
 MODAL 
@@ -443,7 +480,7 @@ LANDING PAGE
   border: none;
   background-color: #242424;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
 }

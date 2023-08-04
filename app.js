@@ -1,3 +1,16 @@
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+  if (contrastToggle) {
+    contrastToggle = !contrastToggle;
+    return document.body.classList.remove("dark-theme");
+  }
+
+  contrastToggle = !contrastToggle;
+  document.body.classList += " dark-theme";
+}
+
 function contact(event) {
   event.preventDefault();
 
@@ -24,7 +37,6 @@ function contact(event) {
     });
 }
 
-let isModalOpen = false;
 function toggleModal() {
   if (isModalOpen) {
     isModalOpen = !isModalOpen;
