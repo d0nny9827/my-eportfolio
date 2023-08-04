@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donovan Lopez | Frontend</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("xfiG7g_lLE9lP101Y");
+      })();
+    </script>
     <script src="./app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
@@ -164,7 +173,7 @@
           <h4 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities.
           </h4>
-          <form id="contact__form">
+          <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
               <label class="form__item--label">
                 <span class="blue">*</span>

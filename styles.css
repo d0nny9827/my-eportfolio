@@ -270,11 +270,11 @@ MODAL
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: -1;
 }
 
 .modal__overlay--loading {
   background-color: #242424;
-  z-index: -1;
 }
 
 .modal__overlay--success {
@@ -283,6 +283,10 @@ MODAL
   font-weight: bold;
   text-align: center;
   padding: 0 28px;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
 }
 
 .modal__exit {
