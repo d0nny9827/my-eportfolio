@@ -55,8 +55,25 @@ GLOBAL / RESUSABLE CLASSES & ID'S
   transform: scale(0.8);
 }
 
+.container {
+  padding: 56px 0;
+}
+
 .fa-adjust {
     font-size: 20px;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 .title {
@@ -129,6 +146,7 @@ LANDING PAGE
 
 /* Increment by 4 or 8px when using margin/padding*/
 /* Even numbers for font sizes */
+
 .social__list {
   margin-top: 16px;
   display: flex;
@@ -194,4 +212,81 @@ LANDING PAGE
   100% {
     transform: translateY(-4px);
   }
+}
+
+/*
+
+PROJECTS 
+
+*/
+
+.project {
+  margin-bottom: 200px;
+}
+
+.project__wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 80px 0 rgba(0,0,0,45);
+  display: flex;
+}
+
+.project__img {
+  width: 100%;
+  transition: all 600ms ease;
+}
+
+.project__wrapper:hover .project__img {
+  transform: scale(1.1);
+  filter: blur(5px);
+}
+
+.project__wrapper--bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1c1d25;
+  opacity: 0;
+  transition: all 450ms ease;
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+  opacity: .7;
+}
+
+.project__description {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translateY(100%);
+  color: white;
+  max-width: 550px;
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
+}
+
+.project__wrapper:hover .project__description {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.project__description--title {
+  font-size: 40px;
+}
+
+.project__description--sub-title {
+  margin-top: 8px;
+}
+
+.project__description--para {
+  margin: 16px 0;
+}
+
+.project__description--link {
+  color: white;
+  font-size: 20px;
+  margin-right: 16px;
 }
