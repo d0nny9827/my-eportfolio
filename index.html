@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donovan Lopez</title>
+    <title>Donovan Lopez | Frontend</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
     <script
@@ -56,10 +56,10 @@
           <h1 class="title">Hey!</h1>
           <h1 class="title blue">I'm Donovan.</h1>
           <p class="header__para">
-            I'm a <b class="blue">Frontend Software Engineer</b>, focusing on customer-satisfaction
-            and continuous learning. Passionate about user needs and industry
-            innovation, I create web applications that align with customer
-            desires and stay ahead of technological trends. <br>
+            I'm a <b class="blue">Frontend Software Engineer</b>, focusing on
+            customer-satisfaction and continuous learning. Passionate about user
+            needs and industry innovation, I create web applications that align
+            with customer desires and stay ahead of technological trends. <br />
             Here's a bit more <b class="blue">about me.</b>
           </p>
           <div class="social__list">
@@ -81,6 +81,135 @@
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
+
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit more about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 21 year-old American
+            <b class="blue">frontend software engineer</b> with a strong passion
+            for developign websites with great
+            <b class="blue">user experiences.</b> <br />
+            I currently work on extremly difficult engineering problems and
+            learn from a team consisting of some of the most
+            <b class="blue">talented</b> and
+            <b class="blue">experienced</b> software engieers everyday.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/html.png"
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/css.png"
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/js.png"
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/ts.svg"
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/tailwind.png"
+              />
+              <span class="language__name">Tailwind</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/react.png"
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/nextjs.svg"
+              />
+              <span class="language__name">Next.js</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/languages/redux.png"
+              />
+              <span class="language__name">Redux</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities.
+          </h4>
+          <form id="contact__form">
+            <div class="form__item">
+              <label class="form__item--label">
+                <span class="blue">*</span>
+                Name</label
+              >
+              <input class="input" name="user_name" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">
+                <span class="blue">*</span>
+                Email</label
+              >
+              <input class="input" name="user_email" type="email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">
+                <span class="blue">*</span>
+                Company / Orginization</label
+              >
+              <input class="input" name="user_company" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">
+                <span class="blue">*</span>
+                Message</label
+              >
+              <textarea
+                class="input"
+                name="user_message"
+                type="text"
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking foward to speaking to you soon.
+          </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+      </div>
     </section>
 
     <section id="projects">
