@@ -24,12 +24,12 @@ li {
 }
 
 p {
-   line-height: 1.5;
-   font-size: 16px; 
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 section {
-    background-color: rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
 }
 
 /*
@@ -39,7 +39,7 @@ GLOBAL / RESUSABLE CLASSES & ID'S
 */
 
 .blue {
-  color: #1E71B8 !important;
+  color: #1e71b8 !important;
 }
 
 .click {
@@ -60,7 +60,34 @@ GLOBAL / RESUSABLE CLASSES & ID'S
 }
 
 .fa-adjust {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.link__hover-effect {
+  position: relative;
+}
+
+.link__hover-effect::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: -2px;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.link__hover-effect--black:after {
+  background-color: #242424;
+}
+
+.link__hover-effect--white:after {
+  background-color: white;
 }
 
 .section__title {
@@ -77,10 +104,10 @@ GLOBAL / RESUSABLE CLASSES & ID'S
 }
 
 .title {
-    font-size: 120px;
-    margin-bottom: 12px;
-    text-align: left;
-    line-height: 1;
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
 }
 /*
 
@@ -89,7 +116,7 @@ NAVIGATION
 */
 
 #landing-page {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 nav {
@@ -110,17 +137,17 @@ nav {
 }
 
 .nav__link--list {
-    display: flex;
+  display: flex;
 }
 
 .nav__list:not(:first-child) {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 .nav__link--anchor {
-    font-size: 16px;
-    color: #242424;
-    font-weight: 700;
+  font-size: 16px;
+  color: #242424;
+  font-weight: 700;
 }
 
 /*
@@ -130,18 +157,19 @@ LANDING PAGE
 */
 
 .header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 1000px;
-    padding: 0 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 32px;
 }
 
 .header__para {
-    line-height: 2;
-    font-size: 24px;
+  line-height: 2;
+  max-width: 800px;
+  font-size: 24px;
 }
 
 /* Increment by 4 or 8px when using margin/padding*/
@@ -153,7 +181,7 @@ LANDING PAGE
 }
 
 .social__link {
-  background-color: #1E71B8;
+  background-color: #1e71b8;
   color: white;
   padding: 6px;
   font-size: 14px;
@@ -232,7 +260,7 @@ PROJECTS
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 80px 0 rgba(0,0,0,45);
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 45);
   display: flex;
 }
 
@@ -258,7 +286,7 @@ PROJECTS
 }
 
 .project__wrapper:hover .project__wrapper--bg {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .project__description {
@@ -303,6 +331,7 @@ FOOTER
 
 footer {
   background-color: #242424;
+  padding: 2% 0;
 }
 
 .footer__row {
@@ -326,7 +355,7 @@ footer {
   display: flex;
   width: 100%;
   max-width: 500px;
-  margin: 6px 0 12px 0;
+  margin: 12px 0 20px 0;
   justify-content: space-between;
 }
 
