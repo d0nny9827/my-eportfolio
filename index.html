@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donovan Lopez | Frontend</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="shortcut icon" href="./assets/personal-logo-transparent.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/personal-logo-transparent.png"
+      type="image/x-icon"
+    />
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -28,14 +32,12 @@
           <img
             class="nav__img"
             src="./assets/personal-logo-transparent.png"
-            alt=""
           />
         </figure>
         <ul class="nav__link--list">
           <li class="nav__list">
             <a
               onclick="toggleModal()"
-              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >About</a
             >
@@ -50,15 +52,14 @@
           <li class="nav__list">
             <a
               onclick="toggleModal()"
-              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
           <li class="nav__list click" onclick="toggleContrast()">
-            <a href="#" class="nav__link--anchor">
+            <span class="nav__link--anchor">
               <i class="fas fa-adjust"></i>
-            </a>
+            </span>
           </li>
         </ul>
       </nav>
@@ -68,10 +69,11 @@
           <h1 class="title">Hey!</h1>
           <h1 class="title fes-blue">I'm Donovan.</h1>
           <p class="header__para">
-            I'm a <b class="fes-blue">Frontend Software Engineer</b>, focusing on
-            customer-satisfaction and continuous learning. Passionate about user
-            needs and industry innovation, I create web applications that align
-            with customer desires and stay ahead of technological trends. <br />
+            I'm a <b class="fes-blue">Frontend Software Engineer</b>, focusing
+            on customer-satisfaction and continuous learning. Passionate about
+            user needs and industry innovation, I create web applications that
+            align with customer desires and stay ahead of technological trends.
+            <br />
             Here's a bit more
             <b class="fes-blue click" onclick="toggleModal()">about me.</b>
           </p>
@@ -106,15 +108,15 @@
             Frontend Software Engineer
           </h4>
           <p class="modal__para">
-            I'm a 21-year-old Hispanic frontend software engineer, passionate
+            I'm a 21-year-old hispanic frontend software engineer, passionate
             about creating user-friendly websites. My
             <b class="fes-blue">strong work ethic</b>,
             <b class="fes-blue">persistance</b>,and
             <b class="fes-blue">determination</b> fuel my continuous growth and
             learning. Eager to explore new languages and frameworks, I spend
             free time enhancing my skills. With a focus on
-            <b class="fes-blue">customer satisfaction</b> and full confidence in my
-            ability to make a positive difference, I look forward to
+            <b class="fes-blue">customer satisfaction</b> and full confidence in
+            my ability to make a positive difference, I look forward to
             contributing to your company.
           </p>
           <div class="modal__languages">
@@ -249,14 +251,45 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/projects/google mockup.png"
+                  src="./assets/projects/netflix-1.png"
                   class="project__img"
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Google Mockup</h3>
+                  <h3 class="project__description--title">Netflix</h3>
                   <h4 class="project__description--sub-title">
-                    React, Tailwind CSS, Three.js, Framer Motion
+                    Tailwind CSS, Next.js, TypeScript, Firebase, Recoil, Stripe
+                    Payments
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores reiciendis, debitis est animi nisi laboriosam
+                    deserunt sapiente rem molestiae iusto, facere veniam!
+                    Possimus obcaecati rerum totam iste saepe? Exercitationem,
+                    doloribus?
+                  </p>
+                  <div class="project__description--links">
+                    <a href="" class="project__description--link">
+                      <i class="fab fa-github click"></i>
+                    </a>
+                    <a href="" class="project__description--link">
+                      <i class="fas fa-link click"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/projects/twitter.png"
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Twitter</h3>
+                  <h4 class="project__description--sub-title">
+                    React, Tailwind CSS, Next.js, Material UI, Redux
                   </h4>
                   <p class="project__description--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -284,36 +317,6 @@
                   <h3 class="project__description--title">Chat App</h3>
                   <h4 class="project__description--sub-title">
                     React, Tailwind CSS, Redux, Next.js, Firebase
-                  </h4>
-                  <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Assumenda impedit inventore maiores error fugit voluptatum
-                    illum dolorum, obcaecati odit! Quia omnis numquam expedita.
-                    Accusamus veniam delectus qui voluptatibus perspiciatis
-                    atque!
-                  </p>
-                  <div class="project__description--links">
-                    <a href="" class="project__description--link">
-                      <i class="fab fa-github click"></i>
-                    </a>
-                    <a href="" class="project__description--link">
-                      <i class="fas fa-link click"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/projects/blinker mockup.png"
-                  class="project__img"
-                />
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">Car Sales Project</h3>
-                  <h4 class="project__description--sub-title">
-                    HTML, CSS, JavaScript, Vue, VueX
                   </h4>
                   <p class="project__description--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
