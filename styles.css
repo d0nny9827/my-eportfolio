@@ -596,6 +596,12 @@ PROJECTS
 .project__description--para {
   margin: 16px 0;
 }
+.project__description--para-threads {
+  margin: 16px 0;
+  overflow-y: auto;
+  max-height: 240px;
+  margin-right: 12px;
+}
 
 .project__description--link {
   color: white;
